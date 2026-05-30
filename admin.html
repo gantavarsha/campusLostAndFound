@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel</title>
+<link rel="icon" type="image/jpg" href="assets/logo.jpg">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+<div class="page-container">
+
+<div class="top-bar">
+
+<a href="index.html" class="btn">
+← Back Home
+</a>
+<button id="themeToggle" class="theme-btn">
+☀
+</button>
+</div>
+<div class="glass-card items-card">
+<h1>Admin Dashboard</h1>
+
+
+<!-- DASHBOARD -->
+<div class="dashboard">
+
+  <div class="dash-card">
+    <h2 id="totalLost">0</h2>
+    <p>Total Lost</p>
+  </div>
+
+  <div class="dash-card">
+    <h2 id="totalFound">0</h2>
+    <p>Total Found</p>
+  </div>
+
+  <div class="dash-card">
+    <h2 id="claimedCount">0</h2>
+    <p>Recovered Items</p>
+  </div>
+
+  <div class="dash-card">
+    <h2 id="pendingCount">0</h2>
+    <p>Pending Cases</p>
+  </div>
+
+</div>
+
+
+<h2 class="section-title">Lost Reports</h2>
+
+<div id="lostAdminItems"></div>
+
+
+<h2 class="section-title">Found Reports</h2>
+
+<div id="foundAdminItems"></div>
+
+<!-- ADMIN ITEMS -->
+
+
+</div>
+
+</div>
+
+
+<script type="module" src="firebase.js"></script>
+
+<script src="darkmode.js"></script>
+
+</body>
+</html>

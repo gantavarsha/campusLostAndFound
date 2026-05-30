@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Found Item</title>
+<link rel="icon" type="image/jpg" href="assets/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+<div class="page-container">
+
+  <div class="top-bar">
+
+    <a href="index.html" class="btn">← Back Home</a>
+
+  </div>
+
+
+  <div class="glass-card form-card">
+
+    <h1>Report Found Item</h1>
+
+
+    <form id="foundForm">
+
+      <input type="text" id="foundName" placeholder="Item Name" required>
+
+      <textarea id="foundDescription" placeholder="Description" required></textarea>
+
+      <input type="text" id="foundLocation" placeholder="Found Location" required>
+
+      <input type="text" id="foundContact" placeholder="Contact Number" required>
+      <input type="file" id="foundImage" accept="image/*">
+
+      <button type="submit" class="btn">Submit</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script src="darkmode.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

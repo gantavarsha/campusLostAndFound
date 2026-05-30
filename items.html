@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>View Items</title>
+<link rel="icon" type="image/jpg" href="assets/logo.jpg">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo-title">
+
+        <img src="assets/logo.jpg" class="logo">
+
+        <h1>Campus Lost & Found</h1>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="lost.html">Lost Item</a>
+
+        <a href="found.html">Found Item</a>
+
+        <a href="items.html">View Items</a>
+
+        <a href="admin.html">Admin</a>
+
+        <button id="themeToggle" class="theme-btn">
+            ☀
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- ITEMS SECTION -->
+
+<div class="items-page">
+
+    <h2 class="items-heading">
+        Lost & Found Reports
+    </h2>
+    <div class="search-box">
+
+    <input type="text"
+    id="searchInput"
+    placeholder="Search items...">
+
+</div>
+<div class="filters">
+
+<button onclick="filterItems('all')">
+All
+</button>
+
+<button onclick="filterItems('Lost')">
+Lost
+</button>
+
+<button onclick="filterItems('Found')">
+Found
+</button>
+
+<button onclick="filterItems('Claimed')">
+Claimed
+</button>
+
+<button onclick="filterItems('Pending')">
+Pending
+</button>
+
+</div>
+ <h2 id="lostHeading" class="section-title lost-title">
+🔴 Lost Items
+</h2>
+
+<div class="slider-wrapper">
+
+<button class="slider-btn"
+onclick="slideLeft('lostContainer')">
+◀
+</button>
+
+<div id="lostContainer"></div>
+
+<button class="slider-btn"
+onclick="slideRight('lostContainer')">
+▶
+</button>
+
+</div>
+
+
+<h2 id="foundHeading" class="section-title found-title">
+🟢 Found Items
+</h2>
+
+<div class="slider-wrapper">
+
+<button class="slider-btn"
+onclick="slideLeft('foundContainer')">
+◀
+</button>
+
+<div id="foundContainer"></div>
+
+<button class="slider-btn"
+onclick="slideRight('foundContainer')">
+▶
+</button>
+
+</div>
+
+
+
+
+</div>
+
+
+<script src="darkmode.js"></script>
+
+<script type="module" src="firebase.js"></script>
+
+
+</body>
+</html>
